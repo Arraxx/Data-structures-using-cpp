@@ -11,7 +11,17 @@ int main()
     v.push_back(2);
     v.push_back(1);
     v.push_back(9);
-    cout<<"size is"<<v.size()<<endl;
+    for(auto i=v.begin();i!=v.end();i++)
+    {
+
+        cout<<"Printing output for the vector"<<*i<<endl;
+    }
+
+for(auto i=v.crbegin();i!=v.crend();i++)
+    {
+
+        cout<<"Printing reverse output for the vector"<<*i<<endl;
+    }
 
 return 0;
 }
