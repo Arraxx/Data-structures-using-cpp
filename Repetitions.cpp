@@ -4,45 +4,20 @@ using namespace std;
 int main(){
     string s;
     cin>>s;
-    ll t=0;
-    t = s.size();
-    int f=0,u=0,c=0,k=0;
-    for(ll i=0;i<t;i++)
+    int c=1,d=1;
+    for(int i=0;i<s.size();i++)
     {
-        if(s[i]=='A')
+        
+        if(s[i]!=s[i+1])
         {
-            f++;
+            c=0;
         }
-        else if(s[i]=='C')
+        c++;
+        if(c>d)
         {
-            u++;
+            d=c;
         }
-        else if(s[i]=='G')
-        {
-            c++;
-        }
-        else
-        {
-            k++;
-        }
-
     }
-    if(f>=u && f>=c && f>=k)
-    {
-        cout<<f;
-    }
-    else if(u>=f && u>=c && u>=k)
-    {
-        cout<<u;
-    }
-    else if(c>=f && c>=u && c>=k)
-    {
-        cout<<c;
-    }
-    else if(k>=f && k>=u && k>=c)
-    {
-        cout<<k;
-    }
-return 0;
+    cout<<d;
 
 }
