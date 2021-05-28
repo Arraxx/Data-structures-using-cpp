@@ -1,17 +1,16 @@
 #include<bits/stdc++.h>
+#define ll long long int
 using namespace std;
-long long int factorial(int n)
+int print(ll n)
 {
-    if(n==1)
-   {return 1;}
-
-else
-   { 
-       return n * factorial(n - 1);}
+    if(n==0)
+    {
+        return 1;
+    }
+    return n*print(n-1);
 }
-int main()
-{
-long long int n;
-cin>>n;
-cout<<factorial(n);
-return 0;}
+int main(){
+    ll n;
+    cin>>n;
+    cout<<print(n);
+}

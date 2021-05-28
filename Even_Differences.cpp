@@ -1,34 +1,33 @@
 #include<bits/stdc++.h>
+#define ll long long int
 using namespace std;
 int main(){
-    int t;
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    ll t;
     cin>>t;
+    
     while(t--){
-        int n;
-        cin>>n;
-        int a[100000];
-        int sum=0;
-        for(int i=0;i<n;i++)
+    ll n;
+    cin>>n;
+    vector<ll> a(n);
+    for(ll i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+
+    ll count=0,c=0;
+    for(ll i=0;i<n;i++)
+    {
+        if(a[i]%2!=0)
         {
-            cin>>a[i];
-            sum += a[i];
-        }
-        if((sum/3) == a[0])
-        {
-            cout<<"0"<<endl;
+            count++;
         }
         else{
-        int count=0;
-        
-        for(int i=0;i<n;i++)
-        {
-
-            if(a[i]%2 != 0){
-                count++;
-            }
-            
-        }
-        cout<<count<<endl;
+            c++;
         }
     }
+    cout<<min(count, c)<<endl;
+    }
+    return 0;
 }
