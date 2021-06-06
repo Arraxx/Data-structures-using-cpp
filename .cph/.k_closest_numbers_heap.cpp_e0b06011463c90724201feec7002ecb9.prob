@@ -1,0 +1,1 @@
+{"name":"Local: k_closest_numbers_heap","url":"x:\\CPP\\k_closest_numbers_heap.cpp","tests":[{"id":1622406721936,"input":"5 3 7\n5 6 7 8 9","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"x:\\CPP\\k_closest_numbers_heap.cpp","group":"local","local":true}
