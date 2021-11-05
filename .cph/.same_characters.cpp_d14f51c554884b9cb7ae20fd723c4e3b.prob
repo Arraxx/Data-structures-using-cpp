@@ -1,0 +1,1 @@
+{"name":"Local: same_characters","url":"c:\\Users\\Arrax\\Documents\\Data-structures-using-cpp\\same_characters.cpp","tests":[{"id":1631909716255,"input":"4\n% # * .\n. # % ^","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Arrax\\Documents\\Data-structures-using-cpp\\same_characters.cpp","group":"local","local":true}

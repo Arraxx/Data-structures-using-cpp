@@ -17,6 +17,10 @@ void sweet(int n, int d, int a[], int b[])
         s.push_back(make_pair(a[i],b[i]));
     }
     sort(s.begin(),s.end());
+    for(int i=0;i<n;i++)
+    {
+        
+    }
     for(int i=0;i<s.size();i++)
     {
         cout<<s[i].first<<s[i].second<<endl;
