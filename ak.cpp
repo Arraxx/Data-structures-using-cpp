@@ -7,5 +7,4 @@ int main(){
     cout<< n/10;
     cout<<n;
     //new
-    
 }
